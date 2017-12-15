@@ -513,7 +513,7 @@ var Event = (function(){
 		_remove = function(key,cache,fn){
 			if(cache[key]){
 				if(fn){
-					for(var i=cache[key].length;i>=0;i--){
+					for(var i=cache[key].length-1;i>=0;i--){
 						if(cache[key][i]===fn){
 							cache[key].splice(i,1);
 						}
